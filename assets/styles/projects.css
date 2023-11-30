@@ -1,0 +1,33 @@
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px 0 20px; /* Agrega un relleno de 10px a los lados izquierdo y derecho */
+}
+
+.card {
+  width: calc(50% - 10px); /* El 50% del contenedor menos el espacio entre las tarjetas y el relleno */
+  height: 300px; /* Altura de cada tarjeta */
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Espacio entre las filas de tarjetas */
+  overflow: hidden;
+}
+
+/* Ajuste para el último elemento si hay un número impar */
+.card:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilos para mostrar todas las tarjetas en una sola columna en pantallas pequeñas */
+@media (max-width: 600px) {
+  .card {
+    width: calc(100% - 10px); /* Ocupa todo el ancho en pantallas pequeñas menos el relleno */
+  }
+}
+
+.card img {
+  width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+  height: 100%; /* Mantiene la proporción de la imagen */
+  display: block; /* Para eliminar el espacio adicional alrededor de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio del contenedor manteniendo su relación de aspecto */
+} 
