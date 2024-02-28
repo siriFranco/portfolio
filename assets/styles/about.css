@@ -1,0 +1,22 @@
+.divConfig {
+   margin: 50px;
+}
+
+.p-important{
+    color: rgb(73, 80, 80);
+    font-weight: bold;
+}
+
+.boton-resume {
+    background-color: #cccccc; /* Color de fondo gris */
+    border: none; /* Quitamos el borde */
+    border-radius: 5px; /* Bordes redondos */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+}
+
+/* Estilo para el botón cuando se pasa el cursor por encima */
+.boton-resume:hover {
+    background-color: #999999; /* Cambiamos el color de fondo al pasar el cursor */
+}

@@ -1,0 +1,13 @@
+h2 {
+    color: black; /* Color negro por defecto */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+    text-decoration: none;
+}
+
+h2:hover {
+    color: purple; /* Cambia a color morado al pasar el mouse */
+}
+
+h2 a {
+    text-decoration: none !important; 
+}
