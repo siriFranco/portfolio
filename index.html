@@ -9,8 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="./assets/styles/main.css" />
-  <link rel="stylesheet" href="./assets/styles/projects.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
   <link rel="stylesheet" href="./assets/styles/navbar.css" />
+  <link rel="stylesheet" href="./assets/styles/footer.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <nav></nav>
 
     <!-- Header -->
-    <div class="container mt-4" style="padding-top:10dvh">
+    <div class="container mt-2"  style="padding-top:12vh">
       <div class="row">
         <div class="col">
           <h1>Siria Franco portafolio</h1>
@@ -26,7 +27,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <h3>Desarrolladora web y diseñadora UX </h3>
+          <h3>Desarrolladora web, diseñadora UX y arquitecta </h3>
         </div>
       </div>
       <div class="row">
@@ -39,26 +40,56 @@
     </div>
      
     <!-- Container general -->
-    <div class="container mt-4">
-      <!-- Container designer UX's projects -->
-      <div class="col">
-        <a href="./assets/html/projectsux.html">
-          <h2>Proyectos diseño UX</h2>
+    <div class="container">
+
+      <!-- Container developer's projects -->
+      <div class="col" style="margin-top: 40px;">
+        <a href="./assets/html/projects.html">
+          <h2 style="margin-bottom: 20px;">Proyectos programación</h2>
         </a>
         <div class="container-card">
           <div class="card" id="card-1">
-            <a href="./assets/html/projectsux/huellitas.html">
-              <img src="./assets/img/projectsux/huellitas/Home (2).png" alt="Huellitas">
+            <a href="https://petzonalize.netlify.app/" target="_blank">
+              <img src="./assets/img/projects/welcome-pets.png" alt="">
             </a>
           </div>
           <div class="card" id="card-2">
-            <a href="./assets/html/projectsux/musiczone.html">
-              <img src="./assets/img/projectsux/musiczone/Desktop - Home.png" alt="Music zone">
+            <a href="https://weather-app-team.netlify.app" target="_blank">
+              <img src="./assets/img/projects/weather-app-miniature.png" alt="">
             </a>
           </div>
           <div class="card" id="card-3">
-            <a href="./assets/html/projectsux/petzonalize.html">
-              <img src="./assets/img/projectsux/petzonalize/Home (1).png" alt="Petzonalize">
+            <a href="https://simulationxboxweb.netlify.app" target="_blank">
+              <img src="./assets/img/projects/xbox-web-miniature.png" alt="">
+            </a>
+          </div>
+          <div class="card" id="card-4">
+            <a href="https://sirifranco-ch26.netlify.app/" target="_blank">
+              <img src="./assets/img/projects/siriafranco-generation-miniature.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Container designer UX's projects -->
+      <div class="col">
+        <a href="./assets/html/projectsux.html">
+          <h2 style="margin-top: 2vh;">Proyectos diseño UX</h2>
+        </a>
+        <div class="container-card">
+          <div class="card" id="card-1">
+            <a href="./assets/html/projectsux/huellitas.html" target="_blank">
+              <img src="./assets/img/projectsux/huellitas/Home (2).png" alt="">
+            </a>
+          </div>
+          <div class="card" id="card-2">
+            <a href="./assets/html/projectsux/musiczone.html" target="_blank">
+              <img src="./assets/img/projectsux/musiczone/Desktop - Home.png" alt="">
+            </a>
+          </div>
+          <div class="card" id="card-3">
+            <a href="./assets/html/projectsux/petzonalize.html" target="_blank">
+              <img src="./assets/img/projectsux/petzonalize/Home (1).png" alt="">
             </a>
           </div>
           <div class="card" id="card-4">
@@ -68,39 +99,15 @@
           </div>
         </div>
       </div>
-      <!-- Container developer's projects -->
-      <div class="col" style="margin-top: 40px;">
-        <a href="./assets/html/projects.html">
-          <h2 style="margin-bottom: 20px;">Proyectos programación</h2>
-        </a>
-        <div class="container-card">
-          <div class="card" id="card-1">
-              <a href="https://petzonalize.netlify.app/" target="_blank">
-                  <img src="./assets/img/projects/welcome-pets.png" alt="Petzonalize">
-              </a>
-          </div>
-          <div class="card" id="card-2">
-              <a href="https://weather-app-team.netlify.app" target="_blank">
-                  <img src="./assets/img/projects/weather-app-miniature.png" alt="">
-              </a>
-          </div>
-          <div class="card" id="card-3">
-              <a href="https://simulationxboxweb.netlify.app" target="_blank">
-                  <img src="./assets/img/projects/xbox-web-miniature.png" alt="">
-              </a>
-          </div>
-          <div class="card" id="card-4">
-              <a href="https://sirifranco-ch26.netlify.app/" target="_blank">
-                  <img src="./assets/img/projects/siriafranco-generation-miniature.png" alt="">
-              </a>
-          </div>
-      </div>
-      <!-- About -->
-      <div class="col" style="margin-bottom: 40px;">
-        <a href="./assets/html/about.html">
-            <h2>Acerca de mí</h2>
-        </a>
+      
     </div>
+    <!-- About -->
+    <div class="container mt-4">
+      <div class="col" style="margin: 20px 0 20px 0;">
+        <a href="./assets/html/about.html">
+          <h2>Acerca de mí</h2>
+        </a>
+      </div>
     </div>
 
   <footer></footer>

@@ -22,6 +22,7 @@
 @media (max-width: 600px) {
   .card {
     width: calc(100% - 10px); /* Ocupa todo el ancho en pantallas pequeñas menos el relleno */
+    height: 150px;
   }
 }
 
@@ -30,6 +31,7 @@
   height: 100%; /* Mantiene la proporción de la imagen */
   display: block; /* Para eliminar el espacio adicional alrededor de la imagen */
   object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio del contenedor manteniendo su relación de aspecto */
+  object-position: top;
 } 
 
 .card-4-overlay {
@@ -40,10 +42,10 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
   display: flex;
-  flex-direction: column;
+  flex-direction: column;/* 
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -53,8 +55,8 @@
 
 .card::before {
   content: attr(data-title);
-  color: white;
-  text-align: center;
+  color: white;/* 
+  text-align: center; */
 }
 
 .card:hover::before {
@@ -77,4 +79,7 @@
   max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
   height: auto; /* Mantiene la proporción de aspecto */
   display: inline-block; /* Asegura que la imagen se ajuste correctamente */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo su relación de aspecto */
+  object-position: top; /* Posiciona la imagen en la parte superior del contenedor */
+
 }

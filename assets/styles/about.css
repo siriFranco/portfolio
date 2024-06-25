@@ -1,22 +1,59 @@
 .divConfig {
-   margin: 50px;
+  margin: 50px;
 }
 
 .p-important{
-    color: rgb(73, 80, 80);
-    font-weight: bold;
+  color: rgb(73, 80, 80);
+  font-weight: bold;
 }
 
 .boton-resume {
-    background-color: #cccccc; /* Color de fondo gris */
-    border: none; /* Quitamos el borde */
-    border-radius: 5px; /* Bordes redondos */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+  background-color: #cccccc; 
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
 }
 
-/* Estilo para el botón cuando se pasa el cursor por encima */
 .boton-resume:hover {
-    background-color: #999999; /* Cambiamos el color de fondo al pasar el cursor */
+  background-color: #999999; 
+}
+
+.container-certificate{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px 0 20px;
+}
+
+.card{
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 42vh; 
+  height: 21vh; 
+  display: block; 
+  object-fit: cover; 
+  object-position: top;
+} 
+
+.card:hover::before {
+  opacity: 1;
+}
+  
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.card-skills {
+  height: 100px; 
+  width: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
